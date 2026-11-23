@@ -1,0 +1,31 @@
+================================================================================
+ERIS-X + AIR TO TALK (UNIFIED SINGLE-FOLDER EDITION)
+Complete Step-by-Step Installation & Deployment Guide
+================================================================================
+
+PROJECT STRUCTURE (Sirf 6 Files - Ek Hi Folder Mein):
+1. index.html                      -> Complete Web Portal + 3D Avatar + Air to Talk UI
+2. server.py                       -> Unified Backend (FastAPI + 128-Agent Swarm + PC Agent)
+3. requirements.txt                -> Python Libraries (PC & Render ke liye)
+4. package.json                    -> Node / Capacitor Config
+5. capacitor.config.json           -> Android APK Wrapper Config
+6. STEP_BY_STEP_INSTALL_GUIDE.txt  -> Yeh Complete Guide File
+
+PART 1: PC PAR KAISE INSTALL AUR RUN KAREIN
+1. ZIP extract karein aur folder ke andar Terminal / CMD kholein.
+2. Python packages install karein:
+   pip install -r requirements.txt
+3. Server run karein:
+   python server.py
+4. Browser mein open karein: http://localhost:8000
+
+PART 2: GITHUB PAR KAISE UPLOAD KAREIN
+1. GitHub par New Repository banayein.
+2. "uploading an existing file" par click karke folder ki sirf yeh 6 files upload karein.
+
+PART 3: RENDER.COM PAR ONLINE WEBSITE KAISE LIVE KAREIN
+1. Render.com par New Web Service banayein aur apni GitHub repo connect karein.
+2. Build Command: pip install -r requirements.txt
+3. Start Command: uvicorn server:app --host 0.0.0.0 --port $PORT
+4. Deploy par click karein — 2 minute mein aapki website online live ho jayegi!
+================================================================================
